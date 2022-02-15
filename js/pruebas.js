@@ -18,3 +18,23 @@ console.log(moderatII);
     
 console.log(moderat);
 
+var mensaje = "Hola, esto es un mensaje para imprimir en log";
+console.log(mensaje);
+
+var numa = 5;
+console.log(numa);
+var numb = 2
+console.log(numa + numb); // Imprime 7
+console.log(numa - numb); // Imprime 3
+console.log(numa * numb); // Imprime 10
+console.log(numa / numb); // Imprime 2.5
+
+var num1 = numa++; // se incrementa despues de devolver el valor
+var num2 = numb--; // se decrementa despues de devolver el valor
+
+console.log(numa);
+console.log(num1);
+console.log(numb);
+console.log(num2);
+
+
