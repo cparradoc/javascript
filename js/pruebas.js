@@ -1,20 +1,20 @@
 var moderatII = new Array();
-        titanes[0] = "The Mark";
-        titanes[1] = "Bad Kingdom";
-        titanes[2] = "Versions";
-        titanes[3] = "Milk";
-        titanes[4] = "Gita";
-        titanes[5] = "Damage Done";
+moderatII[0] = "The Mark";
+moderatII[1] = "Bad Kingdom";
+moderatII[2] = "Versions";
+moderatII[3] = "Milk";
+moderatII[4] = "Gita";
+moderatII[5] = "Damage Done";
         
 var moderat = new Array();
-    titanides[0] = "Rusty nails";
-    titanides[1] = "Seanmonkey";
-    titanides[2] = "Nasty silence";
-    titanides[3] = "Berlin";
+moderat[0] = "Rusty nails";
+moderat[1] = "Seanmonkey";
+moderat[2] = "Nasty silence";
+moderat[3] = "Berlin";
 
-    moderatII.concat(moderat);
+moderatII.concat(moderat);
 
-    console.log(moderatII);
+console.log(moderatII);
     
-    console.log(moderat);
+console.log(moderat);
 
