@@ -188,7 +188,75 @@ var myXmenBind = myXmen.bind(xMen);
 
 myXmenBind();
 
+var dragonBall = {
+  name: 'Son',
+  lastname: 'Goku',
+  fullname: function() {
+    return this.name + ' ' + this.lastname;
+  }
+};
+
+var mySon = {
+  name: 'Son',
+  lastname: 'Gohan'
+};
+
+var myDragonBall = dragonBall.fullname.apply(mySon);
+
+console.log(myDragonBall);
 
 
+function outer() {
+  var nombre = "Nombre oculto en contexto local";
+  function inner() {
+    console.log('Accediendo al contexto local y recuperando el nombre oculto: ' + nombre);
+  }
+  return inner;
+}
+
+var miFunc = outer();
+miFunc(); // No sabe nada del nombre interno del clousure
 
 
+function changePokemon(pokemon) {
+  return function() {
+    console.log('Mi pokemon preferido es: ' + pokemon)
+  }
+}
+var pokemonAgua = changePokemon('Blastoise');
+var pokemonPlanta = changePokemon('Bulbasur');
+var pokemonElectrico = changePokemon('Pikachu');
+
+// Comprobación del clousure
+pokemonElectrico();
+pokemonPlanta();
+pokemonAgua();
+
+function changePokemon2(pokemon) { //probando con otra sintaxis pero que a priori debería funcionar (funciona)
+  function cierre() {
+   console.log('Mi pokemon preferido es: ' + pokemon)
+ }
+ return cierre;
+}
+var pokemonAgua2 = changePokemon2('Blastoise');
+var pokemonPlanta2 = changePokemon2('Bulbasur');
+var pokemonElectrico2 = changePokemon2('Pikachu');
+
+// Comprobación del clousure
+pokemonElectrico2();
+pokemonPlanta2();
+pokemonAgua2();
+
+
+var x = 'global value';
+function foo() {
+  console.log(x); 
+  // undefined 
+  var x = 'local value';
+  console.log(x); 
+  // local value
+} 
+foo();
+
+//hay que tener en cuenta que dentro de las llaves de un if o un for, no se abre un ambito nuevo
+//cuando hablamos de un var
