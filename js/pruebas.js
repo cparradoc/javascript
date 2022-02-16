@@ -131,3 +131,64 @@ function addElement() {
         var body = document.querySelector('body'); 
         body.appendChild(newElem);
 }
+
+console.log(this);
+
+var avengers = {
+  value: 'this se encuentra dentro de avengers',
+  avengerFunction: function() {
+      // this en el scope de un objeto
+      console.log(this);
+  }
+}
+avengers.avengerFunction(); 
+
+//el valor de this depende del objeto desde el que se invoca
+
+var fantasticFour = {
+  nombre: "Reed Richards",
+  miName: function() { 
+    console.log(this.nombre);
+  }
+};
+var reference = fantasticFour.miName; //reference TIENE que estar igualado a una funcion, de otra manera no funciona
+reference(); //devuelve undefined
+
+reference.call(fantasticFour); //le pasamos fantasticFour como argumento para que lo tome como this y llame
+//a su funcion
+
+var fantasticFour2 = {
+  nombre: "Reed Richards",
+  saludar: function (amigo1, amigo2) {
+    console.log("Hola " + amigo1 + " y " + amigo2 + ", yo soy " + this.nombre);
+  }
+};
+
+var miFantastic = fantasticFour2.saludar;
+
+miFantastic.call(fantasticFour2, "Sue Storm", "Johnny Storm");
+
+miFantastic.apply(fantasticFour, [ "Ben Grimm", "Sue Storm" ]); //apply funciona de forma similar pero como
+//segundo argumento toma una array con los argumentos de la funcion
+
+reference.apply(fantasticFour); //en el caso de no tener argumentos funcionaria igual que call (entiendo)
+
+//con bind() solo tenemos que pasarle el contexto (El this que queremos que tome), esta función devuelve
+//una funcion que, cuando se llame, ejecutara la funcion original bindeada
+
+var xMen = {
+  nombre: "Jubilee"
+};
+
+function myXmen() {
+  console.log(this.nombre);
+}
+
+var myXmenBind = myXmen.bind(xMen);
+
+myXmenBind();
+
+
+
+
+
