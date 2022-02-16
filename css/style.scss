@@ -1,5 +1,5 @@
 
-$primary-color: #ed1c24;
+$primary-color: #ffee05;
 $news-height: 100px;
 
 .header {
@@ -10,15 +10,15 @@ $news-height: 100px;
     &__logo {
         height: 40px;
 
-        @media ((min-width: 576px) and (max-width: 768px)){
+        @media (min-width: 576px) and (max-width: 768px) {
             height: 54px;
         }
 
-        @media ((min-width: 768px) and (max-width: 992px)) {
+        @media (min-width: 768px) and (max-width: 992px) {
             height: 64px;
         }
 
-        @media ((min-width: 992px) and (max-width: 1200)) {
+        @media (min-width: 992px) and (max-width: 1200) {
             height: 83px;
         }
 

@@ -1,0 +1,234 @@
+.header {
+  position: relative;
+  width: 100%;
+  background: #ffee05;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .header__logo {
+    height: 54px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .header__logo {
+    height: 64px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200) {
+  .header__logo {
+    height: 83px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__logo {
+    height: 100px;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 200px;
+  left: 0px;
+}
+
+.menu {
+  width: 150px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__item {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffee05;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1.5px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.container {
+  margin-left: 200px;
+  width: 80%;
+  max-width: 1800px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #f4f4f4;
+}
+
+.anuncio {
+  display: block;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 10px 20px;
+}
+
+.anuncio__direct {
+  height: 70px;
+}
+
+.anuncio__pokemon {
+  height: 70px;
+}
+
+.anuncio__mario-kart {
+  height: 70px;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: lightgreen;
+  width: 20%;
+}
+
+.aside__noticia {
+  height: 100px;
+}
+
+/* Resto de reglas en orden creciente */
+@media (min-width: 576px) {
+  p {
+    font-size: 48px;
+  }
+  .anuncio__direct {
+    height: 120px;
+  }
+  .anuncio__pokemon {
+    height: 120px;
+  }
+  .anuncio__mario-kart {
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  .anuncio__direct {
+    height: 130px;
+  }
+  .anuncio__pokemon {
+    height: 130px;
+  }
+  .anuncio__mario-kart {
+    height: 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 20px;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .anuncio__direct {
+    height: 140px;
+  }
+  .anuncio__pokemon {
+    height: 140px;
+  }
+  .anuncio__mario-kart {
+    height: 140px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 24px;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .anuncio__direct {
+    height: 110px;
+  }
+  .anuncio__pokemon {
+    height: 110px;
+  }
+  .anuncio__mario-kart {
+    height: 110px;
+  }
+}
+
+.footer {
+  background-color: #ffee05;
+  margin-top: auto;
+  margin-left: 200px;
+  max-width: 80%;
+}
+
+/*.footer_header {
+    display: flex;
+}*/
+.footer_header__logo {
+  height: 20px;
+}
+
+.footer_copyright {
+  font-size: 15px;
+  color: white;
+  text-align: right;
+  padding-right: 2px;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url(fontawesome-free-6.0.0-web\fontawesome-free-6.0.0-web\webfonts\fa-solid-900.woff2);
+}
+
+.fa {
+  font-family: "Font Awesome 6 Free";
+}
+
+.fa-star::before {
+  font: var(--fa-font-solid);
+  content: "\f005";
+}
+
+.fa-shopping-bag::before {
+  font: var(--fa-font-solid);
+  content: "\f290";
+}
+/*# sourceMappingURL=style.css.map */
