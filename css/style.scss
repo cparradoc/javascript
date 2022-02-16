@@ -54,6 +54,22 @@ $news-height: 100px;
 
 p {
     font-size: 12px;
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
    }
 
 .container {
@@ -101,9 +117,6 @@ p {
    
 /* Resto de reglas en orden creciente */
 @media (min-width: 576px) {
-    p {
-        font-size: 48px;
-    }
 
     .anuncio__direct {
         height: 120px;
@@ -118,9 +131,6 @@ p {
     }
 }
 @media (min-width: 768px) {
-    p {
-        font-size: 16px;
-    }
 
     .anuncio__direct {
         height: 130px;
@@ -135,9 +145,6 @@ p {
     }
 }
 @media (min-width: 992px) {
-    p {
-        font-size: 20px;
-    }
 
     .container {
         flex-direction: row;
@@ -156,9 +163,6 @@ p {
     }
 }
 @media (min-width: 1200px) {
-    p {
-        font-size: 24px;
-    }
 
     .container {
         flex-direction: row;

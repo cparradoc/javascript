@@ -65,6 +65,30 @@ p {
   font-size: 12px;
 }
 
+@media (min-width: 576px) and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 24px;
+  }
+}
+
 .container {
   margin-left: 200px;
   width: 80%;
@@ -121,9 +145,6 @@ p {
 
 /* Resto de reglas en orden creciente */
 @media (min-width: 576px) {
-  p {
-    font-size: 48px;
-  }
   .anuncio__direct {
     height: 120px;
   }
@@ -136,9 +157,6 @@ p {
 }
 
 @media (min-width: 768px) {
-  p {
-    font-size: 16px;
-  }
   .anuncio__direct {
     height: 130px;
   }
@@ -151,9 +169,6 @@ p {
 }
 
 @media (min-width: 992px) {
-  p {
-    font-size: 20px;
-  }
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -172,9 +187,6 @@ p {
 }
 
 @media (min-width: 1200px) {
-  p {
-    font-size: 24px;
-  }
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
