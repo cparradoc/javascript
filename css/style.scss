@@ -4,6 +4,8 @@ $news-height: 100px;
 
 .header {
     position: relative;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     background: $primary-color;
 
@@ -28,9 +30,34 @@ $news-height: 100px;
     }
 
     &__list {
-        height: 100px;
+        border: 3px;
+        border-color: black;
+        background-color: #f4f4f4;
+        border-style:solid;
+        padding: 1em;
     }
 }
+
+p {
+    font-size: 12px;
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
 
 .nav {
     position: fixed;
@@ -56,25 +83,7 @@ $news-height: 100px;
     margin-bottom: 1.5px;
 }
 
-p {
-    font-size: 12px;
 
-    @media (min-width: 576px) and (max-width: 768px) {
-        font-size: 14px;
-    }
-
-    @media (min-width: 768px) and (max-width: 992px) {
-        font-size: 16px;
-    }
-
-    @media (min-width: 992px) and (max-width: 1200) {
-        font-size: 20px;
-    }
-
-    @media (min-width: 1200px) {
-        font-size: 24px;
-    }
-   }
 
 .container {
     margin-left: 200px;
@@ -186,10 +195,33 @@ p {
 }
 
 .footer {
+    display: flex;
+    justify-content: space-around;
     background-color: $primary-color;
     margin-top: auto;
-    margin-left: 200px;
-    max-width: 80%;
+    height: 35px;
+    max-width: 100%;
+
+    &__social-media-logo {
+        margin-top: 2px;
+        height: 20px;
+
+        @media (min-width: 576px) and (max-width: 768px) {
+            height: 22px;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            height: 25px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200) {
+            height: 28px;
+        }
+
+        @media (min-width: 1200px) {
+            height: 31px;
+        }
+    }
 }
 
 .footer_header__logo {

@@ -1,5 +1,10 @@
 .header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   background: #ffee05;
 }
@@ -33,7 +38,39 @@
 }
 
 .header__list {
-  height: 100px;
+  border: 3px;
+  border-color: black;
+  background-color: #f4f4f4;
+  border-style: solid;
+  padding: 1em;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 24px;
+  }
 }
 
 .nav {
@@ -63,34 +100,6 @@
   color: white;
   text-decoration: none;
   margin-bottom: 1.5px;
-}
-
-p {
-  font-size: 12px;
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-  p {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200) {
-  p {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1200px) {
-  p {
-    font-size: 24px;
-  }
 }
 
 .container {
@@ -209,10 +218,44 @@ p {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #ffee05;
   margin-top: auto;
-  margin-left: 200px;
-  max-width: 80%;
+  height: 35px;
+  max-width: 100%;
+}
+
+.footer__social-media-logo {
+  margin-top: 2px;
+  height: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .footer__social-media-logo {
+    height: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer__social-media-logo {
+    height: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200) {
+  .footer__social-media-logo {
+    height: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__social-media-logo {
+    height: 31px;
+  }
 }
 
 .footer_header__logo {
