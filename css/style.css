@@ -132,91 +132,6 @@ p {
   margin: 10px 20px;
 }
 
-.anounce__direct {
-  height: 70px;
-}
-
-.anounce__pokemon {
-  height: 70px;
-}
-
-.anounce__mario-kart {
-  height: 70px;
-}
-
-.aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: lightgreen;
-  width: 20%;
-}
-
-.aside__new {
-  height: 100px;
-}
-
-/* Resto de reglas en orden creciente */
-@media (min-width: 576px) {
-  .anounce__direct {
-    height: 120px;
-  }
-  .anounce__pokemon {
-    height: 120px;
-  }
-  .anounce__mario-kart {
-    height: 120px;
-  }
-}
-
-@media (min-width: 768px) {
-  .anounce__direct {
-    height: 130px;
-  }
-  .anounce__pokemon {
-    height: 130px;
-  }
-  .anounce__mario-kart {
-    height: 130px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .anounce__direct {
-    height: 140px;
-  }
-  .anounce__pokemon {
-    height: 140px;
-  }
-  .anounce__mario-kart {
-    height: 140px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .anounce__direct {
-    height: 110px;
-  }
-  .anounce__pokemon {
-    height: 110px;
-  }
-  .anounce__mario-kart {
-    height: 110px;
-  }
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,17 +171,6 @@ p {
   .footer__social-media-logo {
     height: 31px;
   }
-}
-
-.footer_header__logo {
-  height: 20px;
-}
-
-.footer_copyright {
-  font-size: 15px;
-  color: white;
-  text-align: right;
-  padding-right: 2px;
 }
 
 @font-face {
