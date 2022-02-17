@@ -26,6 +26,10 @@ $news-height: 100px;
             height: 100px;
         }
     }
+
+    &__list {
+        height: 100px;
+    }
 }
 
 .nav {
@@ -86,22 +90,22 @@ p {
     background-color: #f4f4f4;
 }
 
-.anuncio {
+.anounce {
     display: block;
     flex-basis: 20%;
     margin: 10px 20px;
     //width: 20%;
 }
 
-.anuncio__direct {
+.anounce__direct {
     height: 70px;
 }
 
-.anuncio__pokemon {
+.anounce__pokemon {
     height: 70px;
 }
 
-.anuncio__mario-kart {
+.anounce__mario-kart {
     height: 70px;
 }
 
@@ -111,36 +115,36 @@ p {
     width: 20%;
 }
 
-.aside__noticia {
+.aside__new {
     height: $news-height;
 }
    
 /* Resto de reglas en orden creciente */
 @media (min-width: 576px) {
 
-    .anuncio__direct {
+    .anounce__direct {
         height: 120px;
     }
     
-    .anuncio__pokemon {
+    .anounce__pokemon {
         height: 120px;
     }
     
-    .anuncio__mario-kart {
+    .anounce__mario-kart {
         height: 120px;
     }
 }
 @media (min-width: 768px) {
 
-    .anuncio__direct {
+    .anounce__direct {
         height: 130px;
     }
     
-    .anuncio__pokemon {
+    .anounce__pokemon {
         height: 130px;
     }
     
-    .anuncio__mario-kart {
+    .anounce__mario-kart {
         height: 130px;
     }
 }
@@ -150,15 +154,15 @@ p {
         flex-direction: row;
     }
 
-    .anuncio__direct {
+    .anounce__direct {
         height: 140px;
     }
     
-    .anuncio__pokemon {
+    .anounce__pokemon {
         height: 140px;
     }
     
-    .anuncio__mario-kart {
+    .anounce__mario-kart {
         height: 140px;
     }
 }
@@ -168,15 +172,15 @@ p {
         flex-direction: row;
     }
 
-    .anuncio__direct {
+    .anounce__direct {
         height: 110px;
     }
     
-    .anuncio__pokemon {
+    .anounce__pokemon {
         height: 110px;
     }
     
-    .anuncio__mario-kart {
+    .anounce__mario-kart {
         height: 110px;
     }
 }
@@ -187,10 +191,6 @@ p {
     margin-left: 200px;
     max-width: 80%;
 }
-
-/*.footer_header {
-    display: flex;
-}*/
 
 .footer_header__logo {
     height: 20px;
