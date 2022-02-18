@@ -92,7 +92,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     background-color: #f4f4f4;
 
     &__anounce {
@@ -105,6 +105,11 @@ p {
         background-color: #f4f4f4;
         border-style:solid;
         padding: 2px;
+    }
+
+    &__pokemon {
+        margin: 20px;
+        text-align: center;
     }
 }
 

@@ -115,9 +115,9 @@ p {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f4f4f4;
 }
 
@@ -130,6 +130,11 @@ p {
   background-color: #f4f4f4;
   border-style: solid;
   padding: 2px;
+}
+
+.container__pokemon {
+  margin: 20px;
+  text-align: center;
 }
 
 #anounce1 {
