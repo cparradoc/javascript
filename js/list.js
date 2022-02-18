@@ -26,11 +26,11 @@ export function list() {
             pokedex.push(pokemon);
         }
 
-        let divList = document.getElementsByClassName("container__list")[0];
+        let divList = document.getElementsByClassName("container-pokemon__list-display")[0];
 
         for(pokemon in pokedex) {
             let divPokemonListed = document.createElement("div");
-            divPokemonListed.clasName = "container__pokemon";
+            divPokemonListed.clasName = "container-pokemon__pokemon";
             divPokemonListed.id = pokedex[pokemon].id;
 
             let textNodeNamePokemon = document.createTextNode(pokedex[pokemon].name);

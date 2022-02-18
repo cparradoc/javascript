@@ -99,19 +99,37 @@ p {
         border-style:solid;
         padding: 2px;
     }
-    
-    &__list-content {
-        background-color: $secondary-color;
-    }
+
+}
+
+.container-pokemon {
+    width: 100%;
+    max-width: 1800px;
+
     &__list {
+        width: 100%;
         background-color: $secondary-color;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        &-display {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__pokemon {
         margin: 20px;
-        text-align: justify;
+        text-align: center;
     }
 }
+
 
 #anounce1 {
     height: 50px;

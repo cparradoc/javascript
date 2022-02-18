@@ -124,17 +124,50 @@ p {
   padding: 2px;
 }
 
-.container__list-content {
-  background-color: #f4f4f4;
+.container-pokemon {
+  width: 100%;
+  max-width: 1800px;
 }
 
-.container__list {
+.container-pokemon__list {
+  width: 100%;
   background-color: #f4f4f4;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.container__pokemon {
+.container-pokemon__list-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-pokemon__pokemon {
   margin: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 #anounce1 {
