@@ -25,7 +25,7 @@ function addListeners() {
 
     document.getElementById("anounce1").addEventListener("click", onMouseClickAnounce1);
 
-    document.getElementsByClassName("header__list")[0].addEventListener("click", list);
+    document.getElementsByClassName("header__button-list")[0].addEventListener("click", list);
   }
 
 function onMouseOverAnounce1() {

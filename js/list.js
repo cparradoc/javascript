@@ -30,7 +30,7 @@ export function list() {
 
         for(pokemon in pokedex) {
             let divPokemonListed = document.createElement("div");
-            divPokemonListed.clasName = "container-pokemon__pokemon";
+            divPokemonListed.className = "container-pokemon__pokemon";
             divPokemonListed.id = pokedex[pokemon].id;
 
             let textNodeNamePokemon = document.createTextNode(pokedex[pokemon].name);
@@ -38,9 +38,9 @@ export function list() {
             namePokemonListed.appendChild(textNodeNamePokemon);
 
             divPokemonListed.appendChild(namePokemonListed);
+            divPokemonListed.appendChild(pokedex[pokemon].image);
 
             divList.appendChild(divPokemonListed);
-            divList.appendChild(pokedex[pokemon].image);
 
         }
 

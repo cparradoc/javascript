@@ -37,6 +37,11 @@
   }
 }
 
+.header__button-list {
+  margin-top: 10px;
+  height: 50px;
+}
+
 p {
   font-size: 12px;
 }
@@ -141,9 +146,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 
@@ -166,8 +168,14 @@ p {
 }
 
 .container-pokemon__pokemon {
-  margin: 20px;
   text-align: center;
+  margin: 60px;
+}
+
+@media (min-width: 992px) {
+  .container-pokemon__pokemon {
+    margin: 40px;
+  }
 }
 
 #anounce1 {
