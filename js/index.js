@@ -1,3 +1,5 @@
+import {list, Pokemon} from './list.js';
+
 
 window.onload = function () {
     setTimeout(addWelcomeMessage, 2000);
@@ -22,6 +24,8 @@ function addListeners() {
     document.getElementById("anounce3").addEventListener("mouseout", onMouseOutAnounce3);
 
     document.getElementById("anounce1").addEventListener("click", onMouseClickAnounce1);
+
+    document.getElementsByClassName("header__list")[0].addEventListener("click", list);
   }
 
 function onMouseOverAnounce1() {

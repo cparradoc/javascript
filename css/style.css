@@ -37,16 +37,6 @@
   }
 }
 
-.header__list {
-  border: 3px;
-  border-color: black;
-  background-color: #f4f4f4;
-  border-style: solid;
-  padding: 1em;
-  height: 50px;
-  margin-top: 20px;
-}
-
 p {
   font-size: 12px;
 }
@@ -134,9 +124,17 @@ p {
   padding: 2px;
 }
 
+.container__list-content {
+  background-color: #f4f4f4;
+}
+
+.container__list {
+  background-color: #f4f4f4;
+}
+
 .container__pokemon {
   margin: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 #anounce1 {

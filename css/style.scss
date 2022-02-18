@@ -1,5 +1,6 @@
 
 $primary-color: #ffee05;
+$secondary-color: #f4f4f4;
 $news-height: 100px;
 
 .header {
@@ -27,16 +28,6 @@ $news-height: 100px;
         @media (min-width: 1200px) {
             height: 100px;
         }
-    }
-
-    &__list {
-        border: 3px;
-        border-color: black;
-        background-color: #f4f4f4;
-        border-style:solid;
-        padding: 1em;
-        height: 50px;
-        margin-top: 20px;
     }
 }
 
@@ -95,7 +86,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: $secondary-color;
 
     &__anounce {
         width: 20%;
@@ -104,14 +95,21 @@ p {
         
         border: 3px;
         border-color: $primary-color;
-        background-color: #f4f4f4;
+        background-color: $secondary-color;
         border-style:solid;
         padding: 2px;
+    }
+    
+    &__list-content {
+        background-color: $secondary-color;
+    }
+    &__list {
+        background-color: $secondary-color;
     }
 
     &__pokemon {
         margin: 20px;
-        text-align: center;
+        text-align: justify;
     }
 }
 

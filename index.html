@@ -4,39 +4,46 @@
     <title>Pokedex</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- En la proxima línea vamos a cargar un fichero con código -->
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/info.js"></script>
-    <script type="text/javascript" src="js/detail.js"></script>
-    <script type="text/javascript" src="js/list.js"></script>
+    <script type="module" src="js/index.js"></script>
   </head>
   <body>
     <div class="header">
       <a href="#">
         <img class="header__logo" src="images/International_Pokémon_logo.svg" alt="Pokemon logo" >
       </a>      
-      <p class="header__list">
+      <button class="header__list">
         Lista de pokemon
-      </p>
+      </button>
 
     </div>
      <div id="welcome"></div>
      <div class="container" id="index">
-       <div class="container__anounce" id="anounce1">
-        <p>
-          En esta página os mostraremos algunos de los pokémons que nos podemos encontrar en las distintas sagas de la saga de mismo nombre.
-        </p>
+        <div class="container__anounce" id="anounce1">
+          <p>
+            En esta página os mostraremos algunos de los pokémons que nos podemos encontrar en las distintas sagas de la saga de mismo nombre.
+          </p>
+        </div>
+
+        <div class="container__anounce" id="anounce2">
+          <p>
+            También podrás leer las descripciones de los pokemon a más nivel de detalle si te apetece.
+          </p>
+        </div>
+
+        <div class="container__anounce" id="anounce3">
+          <p>
+            ¡Síguenos en nuestras redes sociales!
+          </p>
+        </div>
       </div>
-      <div class="container__anounce" id="anounce2">
-        <p>
-          También podrás leer las descripciones de los pokemon a más nivel de detalle si te apetece.
-        </p>
+
+      <div class="container">
+        <div class="container__list-content">
+          <div class="container__list">
+   
+          </div>
+        </div>
       </div>
-      <div class="container__anounce" id="anounce3">
-        <p>
-          ¡Síguenos en nuestras redes sociales!
-        </p>
-      </div>
-     </div>
 
      
      <div class="footer">
