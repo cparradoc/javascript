@@ -3,6 +3,10 @@ class Pokemon{
         this.id = id;
         this.name = name;
 
+        const image = document.createElement("img");
+        image.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+        this.image = image;
+
 
     }
 }
@@ -33,5 +37,26 @@ function list() {
             pokedex.push(pokemon);
         }
         console.log(pokedex);
+
+        let divList = document.getElementsByClassName("container")[1];
+
+        for(pokemon in pokedex) {
+            divPokemonListed = document.createElement("div");
+            divPokemonListed.clasName = "container__pokemon";
+            divPokemonListed.id = pokedex[pokemon].id;
+
+            textNodeNamePokemon = document.createTextNode(pokedex[pokemon].name);
+            namePokemonListed = document.createElement("h2");
+            namePokemonListed.appendChild(textNodeNamePokemon);
+
+            divPokemonListed.appendChild(namePokemonListed);
+
+            divList.appendChild(divPokemonListed);
+            divList.appendChild(pokedex[pokemon].image);
+        }
+
+
+
+
     });
 }
