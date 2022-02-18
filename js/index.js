@@ -26,6 +26,8 @@ function addListeners() {
     document.getElementById("anounce1").addEventListener("click", onMouseClickAnounce1);
 
     document.getElementsByClassName("header__button-list")[0].addEventListener("click", list);
+
+    document.getElementsByClassName("header__logo")[0].addEventListener("click", onLogoClick);
   }
 
 function onMouseOverAnounce1() {
@@ -54,4 +56,19 @@ function onMouseOverAnounce1() {
 
  function onMouseClickAnounce1() {
     document.getElementById("anounce1").setAttribute("style", "height: 100%");
+ }
+
+ function onLogoClick() {
+    let header = document.getElementsByClassName("header")[0];
+    let listButton = document.getElementsByClassName("header__button-list")[0];
+    if(listButton.style.visibility = 'hidden') {
+      listButton.style.visibility = 'visible';
+
+      let divList = document.getElementsByClassName("container-pokemon__list-display")[0];
+      if(divList) {
+         while(divList.firstChild) {
+            divList.removeChild(divList.lastChild);
+         }
+      }
+    }
  }

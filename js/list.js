@@ -44,6 +44,13 @@ export function list() {
 
         }
 
+        let listButton = document.getElementsByClassName("header__button-list")[0];
+        listButton.style.visibility = 'hidden';
+
+        /*let header = document.getElementsByClassName("header")[0];
+        if(header)
+            header.removeChild(listButton);*/
+
 
 
 
