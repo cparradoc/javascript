@@ -136,6 +136,14 @@ p {
         @media (min-width: 992px) {
             margin: 40px;
         }
+
+        &-types{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
