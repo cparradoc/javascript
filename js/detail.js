@@ -26,6 +26,13 @@ export function detail(idPokemon) {
         pokemonName.appendChild(textNodeNamePokemon);
         divPokemonContainerDetail.appendChild(pokemonName);
 
+        let divPokemonImage = document.createElement("div");
+        let pokemonImage = document.createElement("img");
+        pokemonImage.src = data.sprites.front_default;
+        divPokemonImage.appendChild(pokemonImage);
+        divPokemonContainerDetail.appendChild(divPokemonImage);
+
+
         let divPokemonTypes = document.createElement("div");
         divPokemonTypes.className = "container-pokemon__pokemon-types";
         let pokemonTypes = document.createElement("h3");
