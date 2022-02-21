@@ -1,3 +1,6 @@
+export function parsePokemonId(event) {
+    detail(event.target.id);
+}
 
 function detail(idPokemon) {
     fetch('https://pokeapi.co/api/v2/pokemon/' + idPokemon)

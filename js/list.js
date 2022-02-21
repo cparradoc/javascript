@@ -1,3 +1,4 @@
+import {parsePokemonId} from './detail.js';
 
 export class Pokemon{
     constructor(id, name) {
@@ -32,6 +33,7 @@ export function list() {
             let divPokemonListed = document.createElement("div");
             divPokemonListed.className = "container-pokemon__pokemon";
             divPokemonListed.id = pokedex[pokemon].id;
+            divPokemonListed.onclick = parsePokemonId;
 
             let textNodeNamePokemon = document.createTextNode(pokedex[pokemon].name);
             let namePokemonListed = document.createElement("h2");
@@ -39,7 +41,6 @@ export function list() {
 
             divPokemonListed.appendChild(namePokemonListed);
             divPokemonListed.appendChild(pokedex[pokemon].image);
-
             divList.appendChild(divPokemonListed);
 
         }
