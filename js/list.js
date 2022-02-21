@@ -13,6 +13,9 @@ export class Pokemon{
 }
 
 export function list() {
+    let welcomeDiv = document.getElementById("welcome");
+    welcomeDiv.innerHTML = '';
+    
     fetch('https://pokeapi.co/api/v2/pokemon/')
     .then((response) => {
         return response.json();

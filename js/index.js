@@ -58,7 +58,9 @@ function onMouseOverAnounce1() {
  }
 
  function onLogoClick() {
-    let header = document.getElementsByClassName("header")[0];
+    var checkSamePage = true;
+    let welcomeDiv = document.getElementById("welcome");
+    welcomeDiv.innerHTML = '';
     let listButton = document.getElementsByClassName("header__button-list")[0];
     if(listButton.style.visibility = 'hidden') {
       listButton.style.visibility = 'visible';
@@ -66,6 +68,7 @@ function onMouseOverAnounce1() {
       let divList = document.getElementsByClassName("container-pokemon__list-display")[0];
       if(divList) {
          while(divList.firstChild) {
+            checkSamePage = false;
             divList.removeChild(divList.lastChild);
          }
       }
@@ -74,6 +77,13 @@ function onMouseOverAnounce1() {
          while(divDetail.firstChild) {
             divDetail.removeChild(divDetail.lastChild);
          }
+      } else if(checkSamePage & !divDetail){
+         let samePageAlertDiv = document.createElement("div");
+         let samePageAlert = document.createElement("h2");
+         let samePageAlertText = document.createTextNode("Ya te encuentras en esta página");
+         samePageAlert.appendChild(samePageAlertText);
+         samePageAlertDiv.appendChild(samePageAlertText);
+         welcomeDiv.appendChild(samePageAlertDiv);
       }
     }
  }
