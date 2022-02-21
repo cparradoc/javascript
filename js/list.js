@@ -28,6 +28,9 @@ export function list() {
             pokedex.push(pokemon);
         }
 
+        let divDetail = document.getElementsByClassName("container-pokemon__list-detail")[0];
+        if(divDetail)
+            divDetail.innerHTML = '';
         let divList = document.getElementsByClassName("container-pokemon__list-display")[0];
 
         for(pokemon in pokedex) {

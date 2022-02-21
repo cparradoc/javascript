@@ -69,5 +69,11 @@ function onMouseOverAnounce1() {
             divList.removeChild(divList.lastChild);
          }
       }
+      let divDetail = document.getElementsByClassName("container-pokemon__list-detail")[0];
+      if(divDetail) {
+         while(divDetail.firstChild) {
+            divDetail.removeChild(divDetail.lastChild);
+         }
+      }
     }
  }

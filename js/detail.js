@@ -10,10 +10,14 @@ export function detail(idPokemon) {
     .catch(error => console.error('Error:', error))
     .then(data => {
         let divList = document.getElementsByClassName("container-pokemon__list")[0];
-        divList.innerHTML = '';
-        console.log(data.types);
+
+
+        let divPokemonContainerList = document.createElement("div");
+        divPokemonContainerList.className = "container-pokemon__list-display";
+
         let divPokemonContainerDetail = document.createElement("div");
-        divPokemonContainerDetail.className = "container-pokemon__list-display";
+        divPokemonContainerDetail.className = "container-pokemon__list-detail";
+        divList.innerHTML = '';
 
         let divPokemonDetailed = document.createElement("div");
         divPokemonDetailed.className = "container-pokemon__pokemon";
@@ -41,6 +45,7 @@ export function detail(idPokemon) {
 
         divPokemonDetailed.append(divPokemonTypes);
         divPokemonContainerDetail.append(divPokemonDetailed);
+        divList.append(divPokemonContainerList);
         divList.append(divPokemonContainerDetail);
 
         
