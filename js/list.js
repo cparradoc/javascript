@@ -6,7 +6,8 @@ export class Pokemon{
         this.name = name;
 
         const image = document.createElement("img");
-        image.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+        image.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + this.id + ".png";
+        image.id = this.id;
         this.image = image;
     }
 }
@@ -37,6 +38,7 @@ export function list() {
 
             let textNodeNamePokemon = document.createTextNode(pokedex[pokemon].name);
             let namePokemonListed = document.createElement("h2");
+            namePokemonListed.id = pokedex[pokemon].id;
             namePokemonListed.appendChild(textNodeNamePokemon);
 
             divPokemonListed.appendChild(namePokemonListed);

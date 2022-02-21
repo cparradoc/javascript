@@ -2,16 +2,16 @@ export function parsePokemonId(event) {
     detail(event.target.id);
 }
 
-function detail(idPokemon) {
+export function detail(idPokemon) {
     fetch('https://pokeapi.co/api/v2/pokemon/' + idPokemon)
     .then((response) => {
         return response.json();
     })
     .catch(error => console.error('Error:', error))
     .then(data => {
-        let divList = document.getElementsByClassName("container-pokemon")[0];
+        let divList = document.getElementsByClassName("container-pokemon__list")[0];
         divList.innerHTML = '';
-
+        console.log(data.types);
         let divPokemonContainerDetail = document.createElement("div");
         divPokemonContainerDetail.className = "container-pokemon__list-display";
 
@@ -31,8 +31,9 @@ function detail(idPokemon) {
 
         let pokemonType;
         let textPokemonType;
-        for (type in data.types) {
-            pokemonType = document.createElement("p");
+        for (var type in data.types) {
+            pokemonType = document.createElement("h3");
+            pokemonType.style.padding = "1em";
             textPokemonType = document.createTextNode(data.types[type].type.name);
             pokemonType.appendChild(textPokemonType);
             divPokemonTypes.append(pokemonType);

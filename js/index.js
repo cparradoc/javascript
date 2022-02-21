@@ -1,5 +1,4 @@
-import {list, Pokemon} from './list.js';
-
+import {list} from './list.js';
 
 window.onload = function () {
     setTimeout(addWelcomeMessage, 2000);
