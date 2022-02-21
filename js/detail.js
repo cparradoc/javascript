@@ -19,6 +19,8 @@ export function detail(idPokemon) {
         divPokemonContainerDetail.className = "container-pokemon__list-detail";
         divList.innerHTML = '';
 
+
+        //Nombre
         let divPokemonDetailed = document.createElement("div");
         divPokemonDetailed.className = "container-pokemon__pokemon";
         let pokemonName = document.createElement("h2");
@@ -26,13 +28,14 @@ export function detail(idPokemon) {
         pokemonName.appendChild(textNodeNamePokemon);
         divPokemonContainerDetail.appendChild(pokemonName);
 
+        //Imagen
         let divPokemonImage = document.createElement("div");
         let pokemonImage = document.createElement("img");
         pokemonImage.src = data.sprites.front_default;
         divPokemonImage.appendChild(pokemonImage);
         divPokemonContainerDetail.appendChild(divPokemonImage);
 
-
+        //Tipo o tipos
         let divPokemonTypes = document.createElement("div");
         divPokemonTypes.className = "container-pokemon__pokemon-types";
         let pokemonTypes = document.createElement("h3");
@@ -54,9 +57,6 @@ export function detail(idPokemon) {
         divPokemonContainerDetail.append(divPokemonDetailed);
         divList.append(divPokemonContainerList);
         divList.append(divPokemonContainerDetail);
-
-        
-
 
     });
 }
